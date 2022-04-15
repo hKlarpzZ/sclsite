@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "Codec Cold Trial";
+    src: url('../fonts/CodecCold-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Codec Cold";
+    src: url('../fonts/CodecCold-Regular.ttf');
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hot {
+    font-family: 'Codec Cold Trial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #fff;
+    font-family: "Codec Cold Trial";
+    margin-left: -1%;
+    margin-right: -0.6%;
+    margin-top: -1%;
+}
+
+.header__section {
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    padding: 10px 15px;
+    font-size: 24px;
+}
+
+.header__item:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.headerlogo {
+    font-weight: bold;
+}
+
+body {
+    background-image: url('../img/background.svg');
+    background-size: cover;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 26% 46% 26%;
+    grid-column-gap: 1%;
+    grid-row-gap: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.comment-counter {
+    display: grid;
+    grid-template-columns: 26% 10% 62%;
+    grid-column-gap: 1%;
+    grid-row-gap: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.article-title {
+    display: grid;
+    grid-template-columns: 1% 24% 70% 5%;
+    text-align: left;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    text-align: left;
+}
+
+#text-field {
+    display: grid;
+    grid-template-columns: 34% 30% 34%;
+    grid-column-gap: 1%;
+    margin-bottom: 1%;
+}
+
+#comment-area {
+    resize: inherit;
+    font-family: 'Codec Cold Trial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    background-color: #66639F;
+    height: 36%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: none;
+    color: #fff;
+    width: 80%;
+    margin-left: 1%;
+    z-index: -1;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border-bottom: 1px solid #66639F;
+}
+
+#comment-area:focus {
+    border-bottom: 1px solid #3C3A65;
+}
+
+::placeholder {
+    color: #3C3A65;
+    opacity: 0.5;
+}
+
+#send-nudes {
+    background-image: url('../img/send_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 32px;
+    width: 17%;
+    float: right;
+    cursor: pointer;
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
+.comment-section {
+    display: grid;
+    grid-template-columns: 29% 40% 29%;
+    grid-column-gap: 1%;
+    grid-row-gap: 3%;
+}
+
+.comment-title {
+    display: grid;
+    grid-template-columns: 1% 30% 64% 5%;
+    /* box-sizing: border-box; */
+    text-align: left;
+}
+
+.comment-content {
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    text-align: left;
+}
+
+.empty {
+    opacity: 0;
+}
+
+.author {
+    font-family: 'Codec Cold Trial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.date {
+    font-family: 'Codec Cold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    color: #3C3A65;
+}
+
+.title {
+    font-family: 'Codec Cold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: #3C3A65;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.comment-counter-title {
+    font-family: 'Codec Cold Trial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    float: left;
+}
+
+#comment-counter-variable {
+    font-family: 'Codec Cold Trial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 5%;
+    float: left;
+    color: #3C3A65;
+    opacity: 0.5;
+}
+
+.box {
+    background: #6D6AA5;
+    border-radius: 28px;
+    color: #fff;
+    border-radius: 12px;
+    padding: 1%;
+}
+
+.content {
+    font-family: 'Codec Cold Trial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: #66639F;
+    margin-bottom: 1%;
+}

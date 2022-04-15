@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'articles/css/main.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sugar Cane Land{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__section">
+                <div class="header__item headerlogo">
+                    <a href="/articles">SCL</a>
+                </div>
+            </div>
+            <div class="header__section">
+                <div class="header__item headerButton">
+                    <a href="http://sugarcl.online/main/">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>
